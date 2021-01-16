@@ -33,7 +33,6 @@ div {width: 100%;
     background-position: center;
     cursor: pointer;
     text-align: center;
-    position: fixed;
     }
 
 
@@ -47,9 +46,7 @@ p { font-size: 40px;
 
  /* codigo de creditos */
 .scroll-up {
- height: 600px;
  overflow: hidden;
- position: relative;
 }
 
 .scroll-up p {
