@@ -1,0 +1,153 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  color: black;
+  background-image: url("preguntas.jpg");
+  background-size: cover;
+}
+
+body,
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  line-height: 1.5;
+}
+
+li {
+  line-height: 2;
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  }
+
+
+#header,
+#content {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 500px;
+  max-width: 90%;
+}
+
+#header {
+  margin-top: 1.5em;
+}
+
+#content,
+#footer {
+  padding: 1.5em 3em;
+  margin-top: 1em;
+  background: #bfefbf;
+}
+
+#content {
+  border-radius: 5px;
+}
+
+#footer {
+  text-align: center;
+}
+
+.site-title {
+  margin: 0.2em;
+  font-size: 3.5em;
+}
+
+.score {
+  text-align: center;
+}
+
+#score-counter {
+  font-size: 2.5em;
+}
+
+#score-counter,
+.points {
+  margin: 0;
+}
+
+#question-box {
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+}
+
+#answer-box {
+  margin-bottom: 1.5em;
+}
+
+.answer span {
+  cursor: pointer;
+  margin-left: 1em;
+  transition: 0.1s;
+}
+
+.answer {
+  transition: all .25s ease-in-out;
+}
+
+.answer:hover {
+  opacity: .8;
+  -webkit-transform: translate3d(1em, 0, 0);
+          transform: translate3d(1em, 0, 0);
+}
+
+.correct,
+#num-correct {
+  color: #00A550;
+}
+
+.wrong,
+#num-wrong {
+  color: #C40233;
+}
+
+
+.results {
+  padding: 3em;
+  width: 800px;
+  max-width: 90%;
+  border-radius: 5px;
+  background: white;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background: rgba(21, 22, 23, 0.7);
+}
+
+.results-container.display {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}

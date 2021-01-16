@@ -1,0 +1,93 @@
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  background-color: white;
+  background: linear-gradient(to bottom, #e6f8f9 20%, #b1e8ed 100%);
+  overflow: hidden;
+}
+
+
+div {width: 100%;
+      }
+
+.block {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-image: url("fondo1.png");
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    }
+
+
+p { font-size: 40px;
+  line-height : 80px;
+  color: #828282;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+ /* codigo de creditos */
+.scroll-up {
+ height: 600px;
+ overflow: hidden;
+ position: relative;
+}
+
+.scroll-up p {
+ position: absolute;
+ width: 90%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);
+ transform:translateY(100%);
+ /* Apply animation to this element */
+ -moz-animation: scroll-up 50s linear infinite;
+ -webkit-animation: scroll-up 50s linear infinite;
+ animation: scroll-up 50s linear;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   {
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%);
+ }
+ 100% {
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%);
+ }
+}
+ /* fin de codigo de creditos */

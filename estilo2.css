@@ -1,0 +1,38 @@
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color:#f6e93d;
+}
+
+video { padding-top:2%;
+      padding-left: 20%;
+      padding-right: 20%;}
+
+
+button{
+        text-align: center;
+        background-color: black;
+        border-style: solid;
+        border-color: white;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 40%;
+        margin-right: 40%;
+        color: white;
+        }
+
+
+.block {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    }

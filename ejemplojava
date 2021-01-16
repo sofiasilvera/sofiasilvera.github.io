@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  -webkit-animation: mymove 2s infinite;  /* Chrome, Safari, Opera */
+  -webkit-animation-play-state: paused;  /* Chrome, Safari, Opera */
+  animation: mymove 2s infinite;
+  animation-play-state: paused;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+</style>
+</head>
+<body>
+<script>
+function dobleclick() {
+  document.getElementById("myP").style.WebkitAnimationPlayState = "paused"; // Code for Chrome, Safari, and Opera
+  document.getElementById("myP").style.AnimationPlayState = "paused";
+
+}
+
+function mouseUp() {
+  document.getElementById("myP").style.WebkitAnimationPlayState = "running"; // Code for Chrome, Safari, and Opera
+  document.getElementById("myP").style.AnimationPlayState = "running";
+
+}
+</script>
+
+<div id="myP" onmouseup="mouseUp()" onmouseleave="dobleclick()"></div>
+</body>
+</html>
